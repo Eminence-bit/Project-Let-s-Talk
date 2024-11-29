@@ -1,0 +1,58 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar {
+    width: 100%;
+}
+
+#sidebar h2 {
+    margin-bottom: 1rem;
+}
+
+#contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+#contacts-list li {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+#contacts-list li:hover {
+    background-color: #f4f4f4;
+}
+
+#find-new {
+    padding: 0.7rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#find-new:hover {
+    background-color: #555;
+}
