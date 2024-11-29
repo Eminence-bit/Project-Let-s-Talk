@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  
     const firebaseConfig = {
         apiKey: "AIzaSyDaEDw7HNKBm1jRzDOofQTw-d1NRCBa43Q",
         authDomain: "let-s-talk-95d7c.firebaseapp.com",
@@ -26,12 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
             logging.logEvent('user_logout');
             window.location.href = 'login.html';
         }
-    });
-
-    // Sign in anonymously for testing
-    auth.signInAnonymously().catch(error => {
-        console.error('Authentication error:', error);
-        logging.logEvent('auth_error', { error: error.message });
     });
 
     const findNewButton = document.getElementById('find-new');
